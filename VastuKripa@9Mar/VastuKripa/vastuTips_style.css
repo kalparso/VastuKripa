@@ -1,0 +1,35 @@
+@CHARSET "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    color: #fff;
+    padding:auto;
+    text-align: justify;
+    font-family: Droid Sans;
+}
+
+.para_style {
+    
+    line-height: auto;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-family: Droid Sans;
+    text-align: justify;
+}
+
+
+
+a:link {
+    color: #fff;
+}
+
+@media (max-width: @screen-xs) {
+    body{
+        font-size: 10px;
+    }
+}

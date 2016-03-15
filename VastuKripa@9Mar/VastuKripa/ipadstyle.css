@@ -1,0 +1,126 @@
+@CHARSET "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #000;
+	padding: 6px;
+	text-align: justify;
+	font-family: Droid Sans;
+	background: #ffffff !important;
+}
+
+.container {
+	font-family: Droid Sans;
+	text-align: justify;
+	background: none !important;
+}
+
+
+
+.ht_header {
+	color: #FFBF00;
+	padding-bottom: 12px;
+	font-size: 22px;
+    font-family: Droid Sans;
+}
+
+.ht_header1 {
+	color: #fff;
+	padding-bottom: 12px;
+	font-size: 20px;
+    font-family: Droid Sans;
+}
+
+.para_style {
+	line-height: 22px;
+	padding-bottom: 12px;
+	font-size: 16px;
+    font-family: Droid Sans;
+	text-align: justify;
+}
+.para_style_center{
+	line-height: 22px;
+	padding-bottom: 12px;
+	font-size: 16px;
+    font-family: Droid Sans;
+	text-align: center;
+	
+}
+.para_style01 {
+	line-height: 22px;
+	padding-bottom: 12px;
+	font-size:16px;
+    font-family: Droid Sans;
+	margin-bottom: 6px;
+	text-align: justify;
+}
+
+.inner_ultxt {
+	margin-left: 23px;
+	line-height: 22px;
+}
+
+
+.inner_ultxt ul li, .common_list ul li {
+	text-align: justify;
+	list-style: disc outside none;
+	padding-bottom: 12px;
+	font-size: 16px;
+    font-family: Droid Sans;
+}
+
+.inner_submnu { /*width:100% !important;*/
+	margin-left: 26px;
+}
+
+.inner_submnu li {
+	list-style: circle outside none !important;
+}
+
+.outer_cont h2, .common_list h2 {
+	color: #000;
+	font-size: 18px;
+    font-family: Droid Sans;
+	margin-bottom: 16px;
+	margin-left: 4px;
+}
+.outer_cont h2.underline{
+	font-size: 16px;
+    font-family: Droid Sans;
+	margin-left:18px;
+	color: #000;
+}
+.heading
+{
+	color: #000;
+	font-size: 18px;
+    font-family: Droid Sans;
+	margin-bottom: 12px;
+	margin-left: 4px;
+}
+.inner_sublist {
+	margin: 6px 0 6px 6px;
+}
+
+.inner_sublist li {
+	list-style-type: circle !important;
+	line-height: 20px;
+}
+
+.image_anchor {
+	float: left;
+	width: auto;
+}
+
+.cnstruct_img {
+	width: auto;
+	text-align: center;
+}
+.img_class
+{
+	width:auto;
+}

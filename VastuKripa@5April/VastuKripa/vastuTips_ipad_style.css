@@ -1,0 +1,49 @@
+@CHARSET "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    color: #fff;
+    padding:auto;
+   
+    font-family: Droid Sans;
+}
+
+.para_style {
+    
+    line-height: auto;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-family: Droid Sans;
+    
+}
+
+.vastu-pad{
+    padding:15px;
+}
+.vastu-pad p{
+    margin-bottom:0px;
+}
+.marg-bot{
+    margin-bottom:15px;
+}
+.font-incr{
+    font-size:20px;
+}
+.pad-top{
+    padding-top:10px;
+}
+
+a:link {
+    color: #fff;
+}
+
+@media (max-width: @screen-xs) {
+    body{
+        font-size: 18px;
+    }
+}

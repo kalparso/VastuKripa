@@ -1,0 +1,149 @@
+@CHARSET "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #000;
+	padding: 8px;
+	
+	font-family: Droid Sans !important;
+	background: #ffffff !important;
+}
+
+.container {
+	font-family: Droid Sans !important;
+	
+	background: none !important;
+}
+
+
+
+.ht_header {
+	color: #FFBF00;
+	padding-bottom: 10px;
+	font-size: 16px;
+    font-family: Droid Sans !important;
+}
+
+.ht_header1 {
+	color: #fff;
+	padding-bottom: 10px;
+	font-size: 16px;
+    font-family: Droid Sans !important;
+}
+
+.para_style {
+	line-height: 20px;
+	padding-bottom: 10px;
+	font-size: 16px;
+    font-family: Droid Sans !important;
+	
+}
+.para_style_center{
+	line-height: 20px;
+	padding-bottom: 10px;
+	font-size: 16px;
+    font-family: Droid Sans !important;
+	text-align: center;
+	
+}
+.para_style01 {
+	line-height: 20px;
+	padding-bottom: 10px;
+	font-size: 16px;
+    font-family: Droid Sans !important;
+	margin-bottom: 5px;
+	
+}
+
+.inner_ultxt {
+	margin-left: 22px;
+	line-height: 20px;
+}
+
+
+.inner_ultxt ul li, .common_list ul li {
+    
+	
+	list-style: disc outside none;
+	padding-bottom: 5px;
+	font-size: 16px;
+    font-family: Droid Sans;
+}
+
+.inner_submnu { /*width:100% !important;*/
+	margin-left: 25px;
+}
+
+.inner_submnu li {
+    
+	list-style: circle outside none !important;
+}
+
+.outer_cont h2, .common_list h2 {
+	color: #000;
+	font-size: 16px;
+    font-family: Droid Sans !important;
+	margin-bottom: 10px;
+	margin-left: 3px;
+}
+.outer_cont h2.underline{
+	font-size: 16px;
+    font-family: Droid Sans !important;
+	margin-left: 3px;
+	color: #000;
+}
+.heading
+{
+	color: #000;
+	font-size: 16px;
+    font-family: Droid Sans !important;
+	margin-bottom: 10px;
+	margin-left: 3px;
+}
+.inner_sublist {
+	margin: 5px 0 5px 15px;
+}
+
+.inner_sublist li {
+	list-style-type: circle !important;
+	line-height: 20px;
+}
+
+.image_anchor {
+    
+	float: left;
+	width: auto;
+}
+
+.cnstruct_img {
+    
+	width: auto;
+	text-align: center;
+}
+.img_class
+{
+	width:auto;
+}
+
+.vastu-pad{
+    
+    padding:8px;
+}
+.vastu-pad p{
+    
+    margin-bottom:5px;
+}
+.marg-bot{
+    margin-bottom:5px;
+}
+.font-incr{
+    
+    font-size:16px;
+}
+.pad-top{
+    padding-top:5px;
+}

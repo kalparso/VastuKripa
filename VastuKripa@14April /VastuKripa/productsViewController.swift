@@ -103,6 +103,8 @@
             
             contact_btn.frame.origin.x = self.view.frame.size.width-contact_btn.frame.size.width-15
             
+            cartCount_lbl.frame.origin.x = cart_btn.frame.origin.x+12
+            
             cart_btn.frame.origin.x = contact_btn.frame.origin.x-cart_btn.frame.size.width-5
         }
         

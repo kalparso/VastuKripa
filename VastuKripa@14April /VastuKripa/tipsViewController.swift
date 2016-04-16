@@ -42,6 +42,8 @@ class tipsViewController: UIViewController {
         
         back_view.frame.origin.x = self.view.frame.size.width/2-back_view.frame.size.width/2
         
+        ok_btn.frame.origin.x = back_view.frame.size.width/2 - ok_btn.frame.size.width/2
+        
         tips_msg.frame.size.width = tips_msg.frame.size.width
         
         var noti:AnyObject

@@ -1775,7 +1775,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kyL-yv-v0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-731" y="-2553"/>
+            <point key="canvasLocation" x="-732" y="-2562"/>
         </scene>
         <!--Online Vastu View Controller-->
         <scene sceneID="3Ll-at-HeK">
@@ -3295,7 +3295,7 @@ Electric Fans / Magnets / Metals because it could interfere with the Magnetic
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="s3d-dQ-7Bp">
-                                        <rect key="frame" x="276" y="868" width="239" height="45"/>
+                                        <rect key="frame" x="275" y="868" width="239" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40784313729999999" green="0.65098039220000004" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="DroidSans" family="Droid Sans" pointSize="19"/>
@@ -3352,7 +3352,7 @@ Electric Fans / Magnets / Metals because it could interfere with the Magnetic
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uDo-JM-QUB">
                                         <rect key="frame" x="0.0" y="65" width="768" height="960"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scope: 10/10 (Good Vastu Compliance)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PRY-b8-L6a">
                                                 <rect key="frame" x="0.0" y="8" width="768" height="88"/>
@@ -3876,7 +3876,7 @@ Electric Fans / Magnets / Metals because it could interfere with the Magnetic
                             </view>
                             <view contentMode="scaleToFill" id="gJn-Gq-f6d">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Gt7-0I-v4r">
                                         <rect key="frame" x="20" y="31" width="30" height="30"/>

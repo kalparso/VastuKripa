@@ -202,7 +202,7 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     var documentPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask, true)
     
-    var mahaVastuTips  = ["Keep your study table or work desk neat and clean","Always try to enter your home with your first leg first","Avoid buying or staying on a property on a 'T' junction","Keep the toilet door closed at all times","Keep kitchen appliances in the south or west zone","Do not keep pictures of departed souls inside the temple","Never leave the cash drawer empty","The temple door must have some space for air and light","Windows in south and west zone must be kept closed","Worker toilets should not be present in North East or East zone","As per vastu Must keep your study table or work desk neat and clean","Living room must be in the North or in the East","The main door must open in the right direction in order to avoid a Vastu Dosha","Keep distance between objects using fire and water within the kitchen","Jal, the element that gives life","The main door/gate must be unobstructed","Water tanks must not be installed in the South-East zone","Mirrors in the living room must be in the North or East Zone only","The family head must face North or East Zone during discussions & decision making","Professionals can gain a lot from vastu Shastra","Avoid sleeping in the South East zone","All rooms should be rectangular in shape","Heavy furniture should be in the South-West zone","Do not keep construction material in the North-East, East, North and central zone","Picture of Lord Ganeshaji must be installed back to back","Kitchen must not be present in the North-East, South-West of central zone","As per Vast keep windows in the North and East zone open in the study room","As per vastu Keep distance between objects using fire and water within the kitchen","As per vastu The Tijori must never open towards the South or West direction","As per vastu The family head must face North or East Zone during discussions & decision making"]
+    
     
     override func viewDidLoad() {
         
@@ -338,6 +338,8 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         if self.view.frame.size.width == 414{
             
             bellBtn.frame.origin.x = self.view.frame.size.width-bellBtn.frame.size.width - 20
+            
+            pushCountLbl.frame.origin.x = bellBtn.frame.origin.x+10
             
             compass_img.frame.size.height = 380
             
@@ -1078,13 +1080,7 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         self.navigationController?.navigationBarHidden = true
         
-        
-        if NSUserDefaults.standardUserDefaults().boolForKey("register") != true{
-            
-            self.register()
-            
-        }
-        
+      
         self.revealViewController().panGestureRecognizer()
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -3351,7 +3347,7 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
     }
     
-    func rateMe() {
+ func rateMe() {
         
         let neverRate = NSUserDefaults.standardUserDefaults().boolForKey("neverRate")
         let numLaunches = NSUserDefaults.standardUserDefaults().integerForKey("numLaunches") + 1
@@ -3396,7 +3392,6 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
     
     
-    
     @IBAction func tap_notification_ok_btn(sender: AnyObject) {
         
         notification_View.hidden = true
@@ -3426,7 +3421,7 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
             }
             
             NSUserDefaults.standardUserDefaults().setBool(false, forKey: "Notiction")
-            
+
             
         }
     }
@@ -3452,8 +3447,6 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         info_View.hidden = false
         
-        
-        
         if self.view.frame.size.height<568{
             
             info_View.frame.size.height =  380
@@ -3477,7 +3470,6 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         }
         
         lbl_infoHeader.text = "How to use Vastu Calculator"
-        
         
         
         lbl_info.text = "• Stand in the center of the  property (Brahmasthaan) and orient yourself with a fixed direction with the help of the compass. And please put the phone parallel to the earth axis.\n\n• Room/Space name is displayed at the top of each page (e.g. Director Cabin). Also you can see the score regarding the direction of the place.\n\n• When you are using the Vastu Calculator, please ensure that you are not close to any Magnetic Field like Iron Beams / Columns / Metallic Furniture / Electric Fans / Magnets / Metals because it could interfere with the Magnetic North Readings. Please check that while using this Vastu Calculator on our App..the Magnetic Field should be less than 50uT.\n\n• On top of the screen, You will see the Score and also the Level of Vastu compliance. The Score will ascertain the level of Vastu Doshas or Vastu Perfection of your property.\n\n• You can check the Vastu Tips for the particular place by clicking \"Tips for this direction\" button for particular direction using compass.\n\n• You can select different Vastu places by clicking \"Evaluate other vastu places\" button.\n\n• To Initialize the Sensors, point your phone up towards the sky and move it in a figure 8 motion.";
@@ -3541,37 +3533,5 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
     }
     
-    func  register(){
-        
-        var passDict = [String:AnyObject]()
-        
-        if NSUserDefaults.standardUserDefaults().valueForKey("device_ID") != nil{
-            
-            var postString:String = NSUserDefaults.standardUserDefaults().valueForKey("device_ID") as! String
-            
-            postString = postString.stringByReplacingOccurrencesOfString("-", withString: "", options:NSStringCompareOptions.LiteralSearch, range:nil)
-            
-            let setUserID = NSUserDefaults.standardUserDefaults()
-            
-            setUserID.setValue(postString, forKey: "device_ID")
-            
-            let Device_id = NSUserDefaults.standardUserDefaults().valueForKey("device_ID") as! String
-            
-            passDict = ["device_id":Device_id,"device_type":"IOS"]
-            
-            getConn.startConnectionWithString("pushDeviceId", httpMethodType:Post_Type, httpBodyType: passDict) { (recevedData) -> Void in
-                
-                
-                if(self.getConn .responseCode() == 1){
-                    
-                    NSUserDefaults.standardUserDefaults().setBool(true, forKey: "register")
-                    
-                    
-                }
-                
-            }
-            
-        }
-    }
 }
 
